@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom tasks</title>
+
+    <style>
+
+        button{
+            padding: 25px;
+            margin: 30px;
+            background-color:rgb(187, 190, 255) ;
+            border-radius: 10px;
+        }
+    </style>
+
+
+</head>
+<body>
+
+   
+    <button>lord shiva</button> 
+    <button>devi parvathi matha</button>
+    <button>lord ganesh</button>
+    <button>ayyapa</button>
+    <button>Clear</button>
+
+    
+    <script>
+
+
+let ab=document.createElement("img");
+document.body.appendChild(ab);
+ab.style.width="500px"
+ab.style.display="block"
+ab.style.padding="50px"
+let btn=document.getElementsByTagName("button");
+
+
+let imgg=document.getElementsByTagName("img");
+
+
+btn[0].addEventListener("click",()=>{
+
+    imgg[0].setAttribute("src","https://tse1.mm.bing.net/th?id=OIP.vWTqoItjE3RQShBsS-VQBQHaEK&pid=Api&P=0&h=180");
+    ab.style.display="block";
+
+})
+
+btn[1].addEventListener("click",()=>{
+
+    imgg[0].setAttribute("src","https://tse1.mm.bing.net/th?id=OIP.f6UuLahlSQxVZuZkaO7n-AHaF5&pid=Api&P=0&h=180");
+    ab.style.display="block"
+})
+btn[2].addEventListener("click",()=>{
+
+    imgg[0].setAttribute("src","https://tse3.mm.bing.net/th?id=OIP.eJma-Mr5l3VeUugXIFiw2QHaFj&pid=Api&P=0&h=180");
+    ab.style.display="block"
+})
+btn[3].addEventListener("click",()=>{
+
+    imgg[0].setAttribute("src","https://tse2.mm.bing.net/th?id=OIP.e11sW10387yOKFb1zPMrDwHaEo&pid=Api&P=0&h=180");
+    ab.style.display="block"
+})
+
+
+
+
+btn[4].addEventListener("click",()=>{
+
+    ab.style.display="none"
+})
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
